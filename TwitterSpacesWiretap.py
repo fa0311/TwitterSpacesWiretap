@@ -1,6 +1,8 @@
 import requests
 import json
 
+if __name__ == "__main__":
+    import argparse
 
 class TwitterSpace:
     def __init__(self):
@@ -30,7 +32,7 @@ class TwitterSpace:
         }
 
     def AudioSpaceById(self, url):
-        id = url.split("?")[-1].split("/")[-1]
+        id = url.split("?")[0].split("/")[-1]
         params = {
             "variables": json.dumps(
                 {
@@ -72,10 +74,20 @@ class TwitterSpace:
 
 if __name__ == "__main__":
     space = TwitterSpace()
-    print(
-        "Please enter the URL of the apple:(e.g. https://twitter.com/i/spaces/xxxxxxxxxxx)"
+
+    argpar = argparse.ArgumentParser(
+        prog="TwitterSpacesWiretap",
+        usage="https://github.com/fa0311/TwitterSpacesWiretap",
+        description="Twitter Spaces Wiretap Tool",
     )
-    media_key = space.AudioSpaceById(input()).content["data"]["audioSpace"]["metadata"][
+    argpar.add_argument("--url", default=False)
+    arg = argpar.parse_args()
+    if not arg.url:
+        print(
+            "Please enter the URL of the apple:(e.g. https://twitter.com/i/spaces/xxxxxxxxxxx)"
+        )
+        arg.url = input()
+    media_key = space.AudioSpaceById(arg.url).content["data"]["audioSpace"]["metadata"][
         "media_key"
     ]
     print(space.live_video_stream(media_key).content["source"]["location"])

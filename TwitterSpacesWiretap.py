@@ -30,7 +30,7 @@ class TwitterSpace:
         }
 
     def AudioSpaceById(self, url):
-        id = url.split("/")[-1]
+        id = url.split("?")[-1].split("/")[-1]
         params = {
             "variables": json.dumps(
                 {

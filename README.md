@@ -5,7 +5,7 @@
 スペース: [TwitterSpacesWiretap](https://github.com/fa0311/TwitterSpacesWiretap)
 
 TwitterのSpacesを盗聴するプログラムです<br>
-あなたがこのレポジトリを確認できているということは脆弱性は修正されているということです<br>
+あなたがこのレポジトリを確認できているということはこの脆弱性が修正されているということです<br>
 
 TwitterのSpacesは不適切なアクセス制御によりアカウントを持っていないユーザーでも任意のSpacesを盗聴することが可能でした<br>
 

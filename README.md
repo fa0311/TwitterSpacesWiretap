@@ -4,13 +4,16 @@
 取得: [TweetURLtoData](https://github.com/fa0311/TweetURLtoData) /
 スペース: [TwitterSpacesWiretap](https://github.com/fa0311/TwitterSpacesWiretap)
 
-TwitterのSpacesを盗聴するプログラムです<br>
-あなたがこのレポジトリを確認できているということはこの脆弱性が修正されているということです<br>
-
-TwitterのSpacesは不適切なアクセス制御によりアカウントを持っていないユーザーでも任意のSpacesを盗聴することが可能でした<br>
+TwitterのSpacesをSpacesに参加せずに聞くことが出来ます<br>
 
 ## Using
 
 ```shell
 python TwitterSpacesWiretap.py --url <URL>
+```
+
+返されるURLをffplayやffmpegなどに投げれば聞いたり保存したりも出来ます
+```shell
+ffplay <URL>
+ffmpeg -i <URL> output.mp3
 ```

@@ -1,10 +1,8 @@
 # TwitterSpacesWiretap
-
+TwitterのSpacesに参加せずに聞くことが出来ます<br>
 ログイン: [TwitterFrontendFlow](https://github.com/fa0311/TwitterFrontendFlow) /
 取得: [TweetURLtoData](https://github.com/fa0311/TweetURLtoData) /
 スペース: [TwitterSpacesWiretap](https://github.com/fa0311/TwitterSpacesWiretap)
-
-TwitterのSpacesをSpacesに参加せずに聞くことが出来ます<br>
 
 ## Using
 

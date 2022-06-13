@@ -85,7 +85,7 @@ if __name__ == "__main__":
     arg = argpar.parse_args()
     if not arg.url:
         print(
-            "Please enter the URL of the apple:(e.g. https://twitter.com/i/spaces/xxxxxxxxxxx)"
+            "Please enter the URL of the spaces:(e.g. https://twitter.com/i/spaces/xxxxxxxxxxx)"
         )
         arg.url = input()
     media_key = space.AudioSpaceById(arg.url).content["data"]["audioSpace"]["metadata"][

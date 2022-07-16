@@ -4,6 +4,8 @@ TwitterのSpacesに参加せずに聞くことが出来ます<br>
 取得: [TweetURLtoData](https://github.com/fa0311/TweetURLtoData) /
 スペース: [TwitterSpacesWiretap](https://github.com/fa0311/TwitterSpacesWiretap)
 
+Chrome extension version of javascript: [TwitterSpacesWiretapExtension](https://github.com/fa0311/TwitterSpacesWiretapExtension)
+
 ## Using
 
 ```shell
